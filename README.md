@@ -1,1 +1,1 @@
-# BEM-Structure-for-better-CSS
+Sometimes unknown clashes occurs in CSS which are unnoticed to us in some cases, To have a clearer understanding of all the elements by giving a semantic names to them all are very helpful, this is can be achived through defining classes for each one with semantic names. 
