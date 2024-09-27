@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content=" ">
+  <meta name="description" content=" ">
+  <meta name="keywords" content=" ">  
+  
+  <link rel="stylesheet" href=""/>
+  <link rel="icon" href="">
+  <title></title>
+  
+  <style type="text/css">
+  * ,
+  *::before,
+  *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  //outline: 1px solid yellow;
+  }
+  
+  :root {
+  /* ||Colors */
+  --header-bg: rgba(100,98,95,0.8);
+  --p-bg: #64627C; 
+  
+  /* || Text */
+  line-height: 1.5rem;
+  
+  
+  }
+  
+  body{
+  color: white;
+  background-color: rgba(100,98,95,0.7);
+  }
+  
+  html {
+  scroll-behavior: smooth;
+  }
+  
+/* Header starts */
+
+  .header {
+  padding: 1.5rem;
+  text-align: left;
+  background-color: var(--header-bg); 
+  }
+  
+  .header__gradient {
+  background: linear-gradient(to top,#525456, #fff, #525456);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  }
+  .header__span {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: #f1f1f1;
+  text-shadow: 1px 1px 3px #000;
+  }
+  
+  .header__ul {
+  list-style-type: disc !important;
+  padding: 1rem;
+  font-size: 1rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-weight: 400;
+  background: linear-gradient(to top,#525456, #fff, #525456);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  
+ .header-info {
+ font-size: 1rem;
+ font-weight: 300;
+ background-color: var(--header-bg); 
+ padding: 0 1.5rem 1.5rem;
+ border-bottom: 1px solid rgba(0,0,0,0.5);
+ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.7), 0 2px 2px 0 rgba(0,0,0,0.2);
+ }
+ 
+ /* Header ends */
+ 
+ 
+ /* First section */
+ .block {
+ border-radius: 0.4rem;
+ margin: 4rem 0;
+ background: rgba(0,0,0,0.1);
+ }
+  
+  .block__title {
+  width: 75%;
+  margin: 5rem 0rem 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: rgba(100,98,95,0.5); 
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0,0,0,0.5);
+  box-shadow: 0 -2px 3px 0 rgba(0,0,0,0.3), 0 1px 3px 0 rgba(0,0,0,0.3);
+  transform: translateY(-2rem);
+  }
+  
+  .title__gradient {
+  background: linear-gradient(to top,#525456,#fff,rgba(255,255,255,0.3) ,#fff,#525456);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  }
+  
+  .title__spin {
+  vertical-align: -1px;
+  display: inline-block;
+  font-size: 1.5rem;
+  animation: spin-right 0.4s infinite ease-in alternate;
+  }
+  
+  @keyframes spin-right {
+  
+  0% {transform: translateX(0.3rem);}
+  
+  100%{transform: translateX(1rem) scale(1.3);}
+  }
+  
+  
+.block__list li{
+padding: 0.8rem;
+text-indent: 2rem;
+background-color: var(--p-bg);
+font-weight: 300;
+font-size: 1.2em;
+}
+
+.block__p {
+width: 80%;
+margin: 0 auto;
+padding: 1em 0.5rem;
+font-size: 0.95em;
+font-weight: 300;
+line-height: var(--line);
+
+}
+ 
+/* not working */ 
+.block .block__p::after {
+content: "";
+width: 100px;
+height: 100px;
+background-color: red;
+z-index: 1;
+} 
+
+/* First section ends */
+
+
+/* Card section start ////////*/
+
+.card {
+margin: 0rem auto 5rem;
+}
+
+.card-container {
+width: 85%;
+margin: 5rem auto 0.5rem auto;
+font-size: 1rem;
+font-weight: 300;
+background-color: rgba(100,98,95,0.5); 
+padding: 1rem;
+border-bottom: 1px solid rgba(0,0,0,0.5);
+box-shadow: 0 2px 3px 0 rgba(0,0,0,0.3), 2px 1px 3px 0 rgba(0,0,0,0.3);
+}
+
+.card__title {
+font-size: 1.4rem;
+font-weight: 300;
+padding: 1.5rem;
+background-image: linear-gradient(to right, var(--p-bg), rgb(100,98,135));
+opacity: 0.8;
+box-shadow: 0 2px 3px 0 rgba(0,0,0,0.3), 2px 1px 3px 0 rgba(0,0,0,0.3);
+}
+ 
+ 
+ .card__p {
+ width: 105%;
+ padding: 1.2rem;
+ line-height: var(--line);
+ text-align: justify;
+ }
+ 
+.card__letter {
+display: inline-block;
+padding-bottom: 1rem;
+} 
+ 
+ .card__letter::first-letter {
+ font-size: 1.5rem;
+ opacity: initial;
+ }
+ 
+ /* Card section ends */
+ 
+ 
+ 
+ /* Note section starts*/
+ 
+ .note {
+  margin: 5rem auto;
+  background-color: var(--header-bg);
+ }
+ 
+ .note__title {
+ padding: 0.8rem;
+ text-indent: 2rem;
+ background-color: var(--p-bg);
+ font-weight: 300;
+ font-size: 1.2em;
+ }
+ 
+ .block__list li::first-letter,
+ .note__title::first-letter {
+ font-size: 1.5rem;
+ border-bottom: 1.5px solid rgba(255,255,255,0.3);
+ }
+ 
+ .note__list li {
+ width: 80%;
+ margin: 0 auto;
+ padding: 1em 0.5rem;
+ font-size: 0.95em;
+ font-weight: 300;
+ line-height: var(--line);
+ }
+ 
+ 
+ /* Note section ends*/
+ 
+ /* Variables start */
+ .variable {
+ margin: 2rem auto;
+ position: relative;
+ }
+ 
+ .css-variable {
+ width: 100%;
+ margin: 0rem auto 0.5rem auto;
+ font-size: 1rem;
+ font-weight: 300;
+ background-color: rgba(100,98,95,0.5); 
+ border-bottom: 1px solid rgba(0,0,0,0.5);
+ box-shadow: 0 -2px 3px 0 rgba(0,0,0,0.3), 0 1px 3px 0 rgba(0,0,0,0.3);
+ list-style-type: none;
+ }
+ 
+ .variable__title{
+ padding: 0.8rem;
+ text-indent: 1rem;
+ background-color: var(--p-bg);
+ font-weight: 300;
+ font-size: 1.2em;
+ }
+ 
+ .variable__p {
+ width: 90%;
+ margin: 0 0 0 3rem;
+ padding: 1em 0.5rem;
+ font-size: 0.95em;
+ font-weight: 300;
+ line-height: var(--line);
+ display: block;
+ border-bottom: 1px solid rgba(255,255,255,0.2);
+ box-shadow: 0 -1px 20px 0 rgba(255,255,255,0.2);
+ }
+ 
+ .quickfix {
+ border: none;
+ box-shadow: initial;
+ width: 90%;
+ margin: 0 auto;
+ 
+ }
+ 
+ .variable__p--rotate {
+ padding: 0.5rem;
+ font-size: 3rem;
+ color: var(--p-bg);
+ text-shadow: 1px 1px 3px #fff;
+ position: absolute;
+ top: 100rem;
+ left: -1.8rem;
+ transform: rotate(-90deg);
+ background-image: radial-gradient(skyblue,steelblue);
+ box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+ border-radius: 0.3rem;
+ }
+
+.variable__p-2--rotate {
+padding: 0.5rem;
+font-size: 3rem;
+color: var(--p-bg);
+text-shadow: 1px 1px 3px #fff;
+position: absolute;
+bottom: 65rem;
+left: -3rem;
+transform: rotate(-90deg);
+ background-image: radial-gradient(#F06529,#E34D26);
+box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+border-radius: 0.3rem;
+}
+
+.variable__p-3--rotate {
+padding: 0.5rem;
+font-size: 3rem;
+color: var(--p-bg);
+text-shadow: 1px 1px 3px #fff;
+position: absolute;
+bottom: 30rem;
+left: -3rem;
+transform: rotate(-90deg);
+background-image: linear-gradient(skyblue, steelblue, purple);
+box-shadow: 0 1px 4px 0 rgba(255,255,255,0.2);
+border-radius: 0.3rem;
+}
+
+.variable__p--separate {
+font-family: cursive;
+display: inline-block;
+font-size: 1.3rem;
+width: 95%;
+margin: 0 auto;
+padding: 1.5rem 2rem;
+color: rgba(255,255,255,0.6);
+text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+ .variable__p-2 {
+ width: 90%;
+ margin: 0 0 0 3rem;
+ padding: 1em 0.5rem;
+ font-size: 0.95em;
+ font-weight: 300;
+ line-height: var(--line);
+ display: block;
+ border-top: 1px solid rgba(255,255,255,0.2);
+ box-shadow: 0 1px 20px 0 rgba(255,255,255,0.2);
+ }
+ 
+ 
+.variable__p-result {
+width: 90%;
+margin: 0.2rem 0 0 3rem;
+font-size: 0.95em;
+font-weight: 300;
+line-height: var(--line);
+border-top: 1px solid rgba(255,255,255,0.2);
+box-shadow: 0 1px 20px 0 rgba(255,255,255,0.2);
+}
+ 
+.quickfix-bottom {
+margin-bottom: -0.6rem;
+
+}
+
+.footer {
+background: linear-gradient(to top, #6D6B68, #92908E);
+}
+
+.footer__title {
+color: #92908E;
+text-shadow: 1px 1px 1px #000;
+padding: 1rem 1rem 1.5rem 1rem;
+font-weight: 300;
+font-size: 1.5rem;
+background: linear-gradient(to top, rgba(255,255,255,0.15), transparent);
+}
+
+.footer__text {
+font-weight: 300;
+line-height: 1.6rem;
+padding: 4rem 1rem;
+width: 40ch;
+background: linear-gradient(to right,#64627C, transparent);
+}
+
+.footer__text-copyright {
+padding: 1.5rem 0 1.5rem 0;
+text-align: center;
+background: rgba(255,255,255,0.3);
+color: rgba(0,0,0,0.8);
+text-shadow: 0px 0.3px 1px #fff;
+font-size: 1.1rem;
+}
+ 
+ /* Variables end */
+ 
+  </style>
+</head>
+<body>
+<header>
+<h1 class="header">
+<span class="header__gradient">BEM Setup</span>
+<br>
+<span class="header__span">+ Variables in Root Selector</span>
+   <ul class="header__ul">
+     <li>Block</li>
+     <li>Element</li>
+     <li>Modifier</li>
+   </ul>
+</h1>
+<h2 class="header-info">Lets Organize the CSS using
+BEM Method with Root Variables 
+</h2>
+
+</header>
+
+<main>
+<section class="block">
+<h2 class="block__title">Lets check out some problems first<span class="title__spin"> »</span></h2>
+<ul class="block__list">
+<li>Specificity problem</li>
+<p class="block__p">IDs & Classes have their own values, about 100 > 10, choosing one of them as a selector in terms of higher specificity is very much important, but there may be clash between class and ID when both come together. More extra caution is needed when selecting ID, its good to go with javascript, styling a unique element and more.
+</p>
+<li>Class name similarity</li>
+<p class="block__p">Styling over and over again, creating or choosing a new class name will be disturbing so this method is there to help us keep remembering of the element and finding a new name gets easier.
+</p>
+<li>A common naming rule </li>
+<p class="block__p">To avoid unnecessary usage of id or class names for any element in terms of a group of people working together as a team in a document. A methodology is very much needed in this field to solve this type of problem.
+</p>
+</ul>
+</section>
+
+<section class="block">
+<h2 class="block__title"><span class="title__gradient">BEM</span> is here to solve those problems<span class="title__spin"> »</span></h2>
+<ul class="block__list">
+<li>Solution to specificity problem</li>
+<p class="block__p">If we define a specific selector for all the elements which value or point is equal to all others selectors will help to avoid clash between selectors,
+For example: if a container has an id , then if we select an element with the id , while in the other hand classifing the same header for furthur modification, there will be clash between class and id, though id has a higher specificity so it applies immediately.
+Use of class selector for every element will solve the problem of specificity, the point of classied elements would be same not more than 10points without any element selector added to its front.
+
+</p>
+<li>Solution to class name similarity</li>
+<p class="block__p">If we select a class name which has been selected before then the style will be applied as per the predefined style, so this next problem is that every element must have a separate class name to identify and style accordingly. Here BEM solves it by giving a methodology of naming by the name of block or its parent.
+
+</p>
+<li>Solution to a common naming rule </li>
+<p class="block__p">When a formal declration is made to use BEM among a group of people, the problem of selecting each class by individual choices will disappear. The working flow will have no speed breaker infront of it, inshaAllah.
+</p>
+</ul>
+</section>
+
+<section class="card">
+ <div class="card-container">
+ <h3 class="card__title">B = Block</h3>
+ <p class="card__p">
+ <span class="card__letter">Block defines a meaningful classified container inside a div tag, a parent or a semantic element.</span>
+ <br><span class="card__letter">For example : semantic tag 'Header' or div tag classified semanticly '.card' is a container or parent so it can be defined as a block.</span>
+ <br><span class="card__letter">Letters, digits and dashes are used for naming.</span>
+ <br><span class="card__letter">Syntax : block__element (block two underscore then element).</span>
+ </p>
+ </div>
+ 
+ <div class="card-container">
+ <h3 class="card__title">E = Element</h3>
+ <p class="card__p">
+ <span class="card__letter">Element doesnt define a meaning at all but it is related to the container, as a child of the container.</span>
+ 
+ <span class="card__letter">Example : header__title(h2), here h2 is classified as title is an element inside the header block.</span>
+ 
+ <span class="card__letter">For element we can also use letters, digits and dashes for naming.</span>
+ 
+ <span class="card__letter">Syntax : block__element (header __paragraph).</span>
+ </p>
+ </div>
+ 
+ <div class="card-container">
+ <h3 class="card__title">M = Modifier</h3>
+ <p class="card__p">
+ <span class="card__letter">Modifies block and element both.</span>
+ <span class="card__letter">Example : header__title--large, when a specific style is needed for a group of classes this comes handy.</span>
+ <span class="card__letter">We can use same materials for modifiers which are already available to block and element, there is a little bit of change in the appearance of syntax for recognizing.</span>
+ <span class="card__letter">Syntax : block__element > block/element--modifier, .card--large, .feedback--medium, .feedback__button--large.</span>
+ </p>
+ </div>
+</section>
+
+<section class="note">
+ <h2 class="note__title">Points to be noted</h2>
+ <ul class="note__list">
+ <li>Dash entity '-' is important for joining multiple words together. !important.
+ Example : list-item-number, cardone vs card-one, the first one interrupt the readability.
+ </li>
+ <li> Inside an unorder list here comes an image tag --> ul > li > img / li / li , so here ul is the list and all the li are it's items, so the image tag is the child of the child(li) of the parent(ul), in this case it cannot be selected as list__item__img, BEM is not recommended to it, (because it stands for block then element and then modifer, block__element--modifier, cannot have anything more that these) so that we can take the item as a block and the image as its element.
+ </li>
+</ul>
+</section>
+
+<section class="variable">
+<h1 class="header">
+<span class="header__gradient">CSS Variables</span>
+<br>
+<span class="header__span">In the Root Selector</span>
+</h1>
+<h2 class="header-info">
+Variables are extremely useful for large projects, changing colors of the texts, amount of padding and margins, different values for different properties, likewise every aspect of a document in a short span of time wasnt easy,
+here variables have a lot of work to do, by changing only the variables will affect all the properties which have values from these variables.
+</h2>
+
+<div class="css-variable">
+<div class="variable__list">
+<h2 class="variable__title">How to use ?</h2>
+<p class="variable__p quickfix">
+First of all, root of a html page has to be selected to apply all the values for the variables, and that is :root (colon then root),
+<br>Two dash (--) before any property name defines a variable, --header-bg: #color; We have just created a variable for a background color, can be applied to anything requires color value, but a specific name with a specific value helps a lot even if different properties are needed to use the same value once again.
+<br>Example to that is : <br>--header-bg: #000;<br> --section-bg: #000;
+</p>
+<h2 class="variable__title">Live Example :</h2>
+<p class="variable__p">
+<code style="font-size: 1.1em;">
+:root { <br><br>
+
+/* || COLORS */<br>
+--header-bg: #6462B6;<br>
+--header-text: #f1f1f1;<br>
+--main-bg: purple;<br>
+--main-text: #000;<br>
+--border-color: bisque;<br>
+--list-item: steelblue;<br><br>
+
+/* || FONTS */<br>
+--ff-style: cursive;<br>
+--ff-deco: sensation;<br>
+--fs-small: 0.8rem;<br>
+--fs-large: 1.5rem;<br>
+--fw-thin: 300;<br><br>
+
+/* || PADDING & MARGIN */<br>
+--padding-avg: 0.5rem 1rem;<br>
+--margin-avg: 0.5rem 1rem;<br><br>
+ 
+ /* || Utility */<br>
+ --l-gradient: linear-gradient(to top, purple,steelblue);<br>
+ --r-gradient: radial-gradient(skyblue, steelblue);<br>
+ --border: 2px solid #000;<br>
+ --shadow: 0 1px 1px 0 rgba(255,255,255,0.2), 0px -1px 2px 0 rgba(255,255,255,0.3);<br>
+}
+<br><br>
+<span class="variable__p--separate">/* Header Section starts */
+</span><br><br>
+
+body {<br>
+background: var(--l-gradient);<br>
+}<br><br>
+
+.header {<br>
+background: var(--r-gradient);<br>
+}<br><br>
+
+.header__title {<br>
+background: rgba(255,255,255,0.2);<br>
+font-family: var(--ff-cursive);<br>
+font-size: var(--fs-large);<br>
+padding: var(--padding-avg);<br>
+}<br><br>
+
+.header__text {<br>
+font-size: var(--fs-small);<br>
+font-weight: var(--fw-thin);<br>
+padding: var(--padding-avg);<br>
+}<br><br>
+
+/* Header section ends */<br><br>
+
+/* Main section starts */<br><br>
+.content {<br>
+padding: var(--padding-avg);<br>
+margin: var(--margin-avg);<br>
+}<br><br>
+
+.content__title {<br>
+padding: var(--padding-avg);
+box-shadow: var(--shadow);<br>
+font-weight: var(--fw-thin);<br>
+}<br><br>
+
+.content__text--large {<br>
+border: 1px dotted var(--border-color);<br>
+padding: 0.3rem;<br>
+}<br><br>
+
+/* Main section ends */
+</code>
+<div class="variable__p--rotate">
+CSS
+</div>
+</p>
+
+<!--html page-->
+
+<div class="variable__p-2">
+<code style="font-size: 1.1em;">
+< body><br>
+< header class="header" ><br>
+< h1 class="header__title">Dummy Webpage< /h1 ><br>
+< p class="header__text"><br>
+This is not auto generated but man-made text, the difference between this and Lorum Ipsum is attraction, as it doesnt take our focus away. This is because human brain hasnt that much interest to read a text which is meaningless and used as a dummy template all over the world over and over again.
+< /p><br>
+< /header>
+<br><br>
+< main><br>
+< section class="content"><br>
+< h2 class="content__title" > Lets learn javaScript < /h2><br>
+< p class="content__text" ><br> javaScript is used to interact with the website dynamically, the first programming language for a web developer to learn beside two markups. Its one of the most popular language all over the world for website developing.
+<br> < br>No, its not a ordinary thing that you just read and learn in a day, practise is key to master every object of our life. There is no shortcut excpet practise, practise and practise. I dont know if someone is there able to comprehend in a short span of time that could be rare or exception or maybe not. 
+< /p><br><br>
+<  p style="content__text-large"  >
+Tip : W3School.com, as well as freeCodeCamp, scrimba --- are very benifical platforms to learn javaScript.
+< / p>
+< /section><br>
+< /main><br>
+< /body>
+</code>
+<div class="variable__p-2--rotate">
+HTML
+</div>
+</div>
+<!--HTML page ends-->
+
+
+<!-- Result Page -->
+<div class="variable__p-result quickfix-bottom">
+<div style="
+background: linear-gradient(to top, purple,steelblue);
+margin: 0 0 0 auto;
+">
+<header
+style="
+background: radial-gradient(skyblue, steelblue);
+width: 100%;
+" 
+><br>
+<h1 style="
+background: rgba(255,255,255,0.2);
+margin: 0 0 -1.7rem 0;
+font-family: cursive;
+font-size: 1.5rem;
+padding: 0.5rem 1rem;
+">Dummy Webpage</h1><br>
+<p style="
+width: 90%;
+margin: 0 auto;
+font-size: 0.8rem;
+font-weight: 300;
+padding: 0.5rem 1rem;
+"><br>
+This is not auto generated but man-made text, the difference between this and Lorum Ipsum is attraction, as it doesnt take our focus away. This is because human brain hasnt that much interest to read a text which is meaningless and used as a dummy template all over the world over and over again.
+</p><br>
+</header>
+<br><br>
+<div style="
+padding: 0.5rem 1rem;
+margin: 0.5rem 1rem;
+" >
+<h2 style="
+font-weight: 300;
+padding: 0.5rem 1rem;
+box-shadow: 0 1px 1px 0 rgba(255,255,255,0.2), 0px -1px 2px 0 rgba(255,255,255,0.3);<br>
+" > Lets learn javaScript </h2><br>
+<p style="
+
+" ><br> javaScript is used to interact with the website dynamically, the first programming language for a web developer to learn beside two markups.
+Its one of the most popular language all over the world for website developing.
+<br><br>
+No, its not a ordinary thing that you just read and learn in a day, practise is the key to master every object of our life. There is no shortcut except practise, practise and practise. I dont know if someone is there able to comprehend in a short span of time that could be rare or exception or maybe not.
+<br><br><br>
+<p style="
+border: 1px dotted bisque;
+padding: 0.3rem;
+">
+Tip : W3School.com, as well as freeCodeCamp, scrimba --- are very beneficial platforms to learn javaScript.
+</p>
+</p>
+</div>
+</div>
+<div class="variable__p-3--rotate">
+Result
+</div>
+</p>
+
+</div>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+<h3 class="footer__title">
+Conclusion :
+</h3>
+<p class="footer__text">
+While viewing source code of this file you may notice that some declarations have been made which are not mentioned as a reference, this is because there were some styling already cascading into it. So those were overwritten by the 'initial' value and inline declarations.
+</p>
+<p class="footer__text-copyright">
+Free material, no copyright protected<br>
+<span style="vertical-align: -3.6px;">Created with ♡ By Md AlAmin.</span>
+<a 
+style="
+text-decoration: none;
+color: #000;
+display: inline-block;
+padding: 0rem 0.3rem;
+background: rgba(255,255,255,0.1);
+"
+href="#">⇧</a>
+</p>
+</footer>
+<!--By the grace of Allah this ordinary project has been completed-->
+</body>
+</html>
